@@ -1,4 +1,4 @@
-Exercise folder contains my solution in JS and Python.
+exercises folder contains my solution in JS and Python.
 
 ------------------------------------------------------------------------------
 # AlgoCasts
