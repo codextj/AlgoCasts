@@ -1,4 +1,5 @@
-exercises folder contains my solution in JS and Python.
+- exercises folder contains my solution in JS and Python.
+- jest ./excercises/chunk/test.js --watch
 
 ------------------------------------------------------------------------------
 # AlgoCasts
