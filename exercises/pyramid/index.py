@@ -14,8 +14,6 @@
 # //       ' ### '
 # //       '#####'
 
-from platform import python_branch
-
 
 def pyramid(n):
     for i in range(n):
