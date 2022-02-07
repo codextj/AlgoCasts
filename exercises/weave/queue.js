@@ -5,16 +5,25 @@
 // removing it.
 
 class Queue {
-  constructor() {
-    this.data = [];
-  }
+  // Stephen way
+    constructor() {
+        this.data = [];
+    }
 
-  add(record) {
-    this.data.unshift(record);
-  }
+    add(record) {
+        // O(n)
+        // adding latest element at index 0
+        this.data.unshift(record);
+    }
 
-  remove() {
-    return this.data.pop();
+    remove() {
+        // O(1)
+        // first element of queue is at last index
+        return this.data.pop();
+    }
+
+    peek() {
+      return this.data[this.data.length-1];
   }
 }
 

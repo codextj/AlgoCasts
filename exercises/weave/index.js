@@ -24,6 +24,30 @@
 
 const Queue = require('./queue');
 
-function weave(sourceOne, sourceTwo) {}
+function weave(sourceOne, sourceTwo) {
+    // returns a Queue with alternating values from sourceOne & sourceTow in FIFO sequence
+
+    const weave = new Queue();
+    while (true) {
+        if (sourceOne.peek() === undefined || sourceTwo.peek() === undefined) {
+            break;
+        }
+
+        var [a, b] = [sourceOne.remove(), sourceTwo.remove()];
+        weave.add(a);
+        weave.add(b);
+    }
+
+    while (sourceOne.peek()) {
+        weave.add(sourceOne.remove());
+    }
+
+    while (sourceTwo.peek()) {
+        weave.add(sourceTwo.remove());
+    }
+
+    return weave;
+
+}
 
 module.exports = weave;
